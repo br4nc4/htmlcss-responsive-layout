@@ -107,9 +107,24 @@ body {
     flex-basis: 100%;
 }
 
-.card{ /* solo per debug */
-    min-height: 100px;
-    background-color: red;
+.card-img-default{
+    width: 250px;
+}
+
+.card-svg-default{
+    width: 60px;
+}
+
+.svg-size-1{
+    width: 80px;
+}
+
+.svg-size-2{
+    width: 100px;
+}
+
+.card-txt-center{
+    text-align: center;
 }
 
 @media screen and (max-width: 992px){ /* max-width va a scendere */
