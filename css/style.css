@@ -75,11 +75,17 @@ body {
 
 .card-row{
     display: flex;
+    min-width: 616px;
+    min-height: 337px;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
+}
+
+.gap-sm{
+    gap: 1rem;
 }
 
 .jus-center{
@@ -100,11 +106,11 @@ body {
 }
 
 .col-1{
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 - 1rem);
 }
 
 .col-2{
-    flex-basis: calc((100% / 3) * 2);
+    flex-basis: calc((100% / 3) * 2 - 1rem);
 }
 
 .col-3{
@@ -112,11 +118,12 @@ body {
 }
 
 .card-img-default{
-    width: 250px;
+    width: 225px;
 }
 
 .card-svg-default{
     width: 60px;
+    padding-bottom: 1rem;
 }
 
 .svg-size-1{
@@ -127,20 +134,38 @@ body {
     width: 100px;
 }
 
-.card-left{
-    padding: 0 1rem;
+.card-pd-1{
+    padding: 2rem 1rem;
 }
+
+.card-border-default{
+    border-radius: 15px;
+}
+
+.card-left{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-right: 4rem;
+}
+
+.card-right{
+    align-self: flex-end;
+    padding-right: 4rem;
+}
+
 
 .card-txt-center{
     text-align: center;
 }
 
-.card p{
+.card small{
     color: #5A6E7F;
+    line-height: 2rem;
 }
 
-.card h2{
+.card h3{
     color: #0084FD;
+    padding-bottom: 1.5rem;
 }
 
 .card-button{
@@ -149,6 +174,7 @@ body {
     width: 190px;
     padding: .5rem 0;
     border-radius: 25px;
+    margin-top: 2rem;
 }
 
 .card-button a{
@@ -164,7 +190,7 @@ body {
 
 @media screen and (max-width: 992px){ /* max-width va a scendere */
     .container{
-        width: calc(var(--bp-md) - 2rem); /* larghezza che va bene fino al breakpoint successivo */
+        width: calc(var(--bp-md) - 1rem); /* larghezza che va bene fino al breakpoint successivo */
     }
 
     .col-lg-half{
@@ -174,7 +200,7 @@ body {
 
 @media screen and (max-width: 768px){
     .container{
-        width: calc(var(--bp-sm) - 2rem); /* valore minore o uguale al breaklpoint successivo */
+        width: calc(var(--bp-sm) - 1rem); /* valore minore o uguale al breaklpoint successivo */
     }
     
     .col-md-half{
