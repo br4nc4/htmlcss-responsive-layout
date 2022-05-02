@@ -92,6 +92,7 @@ body {
 .row-vertical{
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .gap-sm{
@@ -178,6 +179,7 @@ body {
 .card-purple{
     display: flex;
     background-color: var(--color-primary);
+    padding: 2rem 1rem;
 }
 
 .card-purple img{
@@ -195,6 +197,11 @@ body {
     align-items: center;
 }
 
+.txt-right{
+    width: 650px;
+    align-self: center;
+}
+
 .text-style{
     font-style: oblique;
 }
@@ -202,7 +209,6 @@ body {
 .text-xs-spec{
     line-height: 20px;
 }
-
 
 .text-s-spec{
     line-height: 24px;
@@ -241,6 +247,20 @@ body {
     color: black;
 }
 
+.rnd-profile{
+    margin-right: 3.5rem;
+    width: 163px;
+    height: 163px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.rnd-profile .rnd-img{
+    width: auto;
+    height: 100%;
+    margin-left: -40px;
+}
+
 .round-button{
     width: 40px;
     height: 40px;
@@ -254,15 +274,6 @@ body {
     position: absolute;
     right: calc(40px / 2 - 5px); /* forse è meglio usare transform? */
     top: calc(40px / 2 - 8px);
-}
-
-.card-button{
-    background-color: #0084FD;
-    text-align: center;
-    width: 190px;
-    padding: .5rem 0;
-    border-radius: 25px;
-    margin-top: 2rem;
 }
 
 .card-button a{
