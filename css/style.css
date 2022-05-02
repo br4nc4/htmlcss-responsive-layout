@@ -89,6 +89,11 @@ body {
     flex-wrap: wrap;
 }
 
+.row-vertical{
+    display: flex;
+    flex-direction: column;
+}
+
 .gap-sm{
     gap: 1rem;
 }
@@ -170,6 +175,15 @@ body {
     padding-right: 4rem;
 }
 
+.card-purple{
+    display: flex;
+    background-color: var(--color-primary);
+}
+
+.card-purple img{
+    width: 250px;
+}
+
 .card-txt-center{
     text-align: center;
 }
@@ -195,12 +209,24 @@ body {
     font-weight: 600;
 }
 
+.txt-m-spec{
+    font-size: 16px;
+}
+
+.txt-l{
+    font-size: 35px;
+}
+
 .text-color-1{
     color: #5A6E7F;
 }
 
 .text-clr-2{
     color: black;
+}
+
+.txt-clr-3{
+    color: var(--color-primary);
 }
 
 .title-s-pd{
@@ -218,13 +244,13 @@ body {
 .round-button{
     width: 40px;
     height: 40px;
-    background-color: #9792E4;
+    background-color: var(--color-primary);
     border-radius: 50%;
     position: relative;
 }
 
 .rnd-button{
-    width: 90px;
+    width: 9px;
     position: absolute;
     right: calc(40px / 2 - 5px); /* forse è meglio usare transform? */
     top: calc(40px / 2 - 8px);
