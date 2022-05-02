@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #9792E4;
+    --color-secondary: #007bff; 
+    --color-secondary-light: #B5DDFF;
+    --bp-sm: 576px;
+    --bp-md: 768px;
+    --bp-ld: 992px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 980px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-p-medium{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.container-p-large{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.section{
+    padding: 2rem 0; /* si aggiunge in seguito più padding */
+    width: 100%;
+}
+
+.bg-primary{
+    background-color: var(--color-primary);
+}
+
+.bg-secondary{
+    background-color: var(--color-secondary);
+}
+
+.bg-secondary-light{
+    background-color: var(--color-secondary-light);
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jus-center{
+    justify-content: center;
+}
+
+.col{
+    flex-grow: 1;
+    flex-basis: 0;    
+}
+
+.col-1{
+    flex-basis: calc(100% / 3);
+}
+
+.col-2{
+    flex-basis: calc((100% / 3) * 2);
+}
+
+.col-3{
+    flex-basis: 100%;
+}
+
+.card{ /* solo per debug */
+    min-height: 100px;
+    background-color: red;
+}
+
+@media screen and (max-width: 992px){ /* max-width va a scendere */
+    .container{
+        width: calc(var(--bp-md) - 2rem); /* larghezza che va bene fino al breakpoint successivo */
+    }
+
+    .col-lg-half{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: calc(var(--bp-sm) - 2rem); /* valore minore o uguale al breaklpoint successivo */
+    }
+    
+    .col-md-half{
+        flex-basis: 50%;
+    }
+
+    .col-md-full{
+        flex-basis: 100%;
+    }
+
+    .container-md-p-default{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .container{
+        width: 100%;
+    }
+
+    .col-sm-half{
+        flex-basis: 50%;
+    }
+    
+    .col-sm-full{
+        flex-basis: 100%;
+    }
+    
+    .container-sm-p-default{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
