@@ -13,6 +13,7 @@ body {
     --color-primary: #9792E4;
     --color-secondary: #007bff; 
     --color-secondary-light: #B5DDFF;
+    --color-third: white;
     --bp-sm: 576px;
     --bp-md: 768px;
     --bp-ld: 992px;
@@ -52,6 +53,10 @@ body {
     background-color: var(--color-secondary-light);
 }
 
+.bg-third{
+    background-color: var(--color-third);
+}
+
 .button{
     background-color: #FFFFFF;
     padding: .5rem 1rem;
@@ -76,7 +81,7 @@ body {
 .card-row{
     display: flex;
     min-width: 616px;
-    min-height: 337px;
+    min-height: 305px;
 }
 
 .row{
@@ -117,8 +122,16 @@ body {
     flex-basis: 100%;
 }
 
-.card-img-default{
+.card-img-size-1{
     width: 225px;
+}
+
+.card-img-size-2{
+    width: 330px;
+}
+
+.card-img-size-3{
+    width: 205px;
 }
 
 .card-svg-default{
@@ -158,12 +171,13 @@ body {
     text-align: center;
 }
 
-.card small{
+.text-s{
     color: #5A6E7F;
-    line-height: 2rem;
+    line-height: 24px;
+    font-weight: 600;
 }
 
-.card h3{
+.title-s{
     color: #0084FD;
     padding-bottom: 1.5rem;
 }
@@ -186,6 +200,12 @@ body {
 .card-button svg{
     width: 15px;
     vertical-align: sub;
+}
+
+.text-xs{
+    color: white;
+    font-weight: 100;
+    line-height: 20px;
 }
 
 @media screen and (max-width: 992px){ /* max-width va a scendere */
